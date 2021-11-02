@@ -227,6 +227,9 @@ public final class NVActivityIndicatorPresenter {
     /// Current status of animation, read-only.
     public var isAnimating: Bool { return state == .animating || state == .waitingToStop }
 
+    /// This is used to auto stop, you should invalidate it when representing 
+    public var stopAnimationTimer: Timer?
+
     private init() {}
 
     // MARK: - Public interface
