@@ -223,6 +223,8 @@ public final class NVActivityIndicatorPresenter {
     /// Current status of animation, read-only.
     public var isAnimating: Bool { return state == .animating || state == .waitingToStop }
 
+    public var stopAnimationTimer: Timer?
+
     private init() {}
 
     // MARK: - Public interface
